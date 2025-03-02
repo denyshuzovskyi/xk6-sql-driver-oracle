@@ -1,13 +1,13 @@
 # xk6-sql-driver-oracle
 
 Database driver extension for [xk6-sql](https://github.com/grafana/xk6-sql) k6 extension to support Oracle database. 
-Uses [Go Driver for Oracle](https://github.com/godror/godror).
+Uses [go-ora](https://github.com/sijms/go-ora).
 
 ## Example
 
 ```JavaScript file=examples/example.js
 import sql from "k6/x/sql";
-import driver from "k6/x/sql/driver/godror";
+import driver from "k6/x/sql/driver/oracle";
 
 const db = sql.open(driver, "oracle://oracle:oracle@localhost:1521/FREEPDB1");
 
@@ -48,12 +48,5 @@ export default function () {
 }
 ```
 
-## Build
-To build k6 with this extension,  ensure you have a C compiler installed (e.g. gcc), and set CGO_ENABLED=1.
-```shell
-CGO_ENABLED=1 xk6 build --with github.com/grafana/xk6-sql@latest --with github.com/denyshuzovskyi/xk6-sql-driver-oracle
-```
-Also check the [xk6-sql documentation](https://github.com/grafana/xk6-sql).
-
-## Runtime
-[Oracle Instant Client](https://www.oracle.com/database/technologies/instant-client/downloads.html) is required at runtime.
+## Usage
+Check the [xk6-sql documentation](https://github.com/grafana/xk6-sql) on how to use this database driver.

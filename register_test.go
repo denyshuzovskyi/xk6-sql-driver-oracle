@@ -57,5 +57,5 @@ func TestIntegration(t *testing.T) { //nolint:paralleltest
 
 	dsn := fmt.Sprintf("oracle://oracle:oracle@%s/FREEPDB1", net.JoinHostPort(host, mappedPort.Port()))
 
-	sqltest.RunScript(t, "godror", dsn, script)
+	sqltest.RunScript(t, "oracle", dsn, script)
 }

@@ -1,5 +1,5 @@
 import sql from "k6/x/sql";
-import driver from "k6/x/sql/driver/godror";
+import driver from "k6/x/sql/driver/oracle";
 
 const db = sql.open(driver, "oracle://oracle:oracle@localhost:1521/FREEPDB1");
 

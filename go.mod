@@ -3,8 +3,8 @@ module github.com/denyshuzovskyi/xk6-sql-driver-oracle
 go 1.22
 
 require (
-	github.com/godror/godror v0.46.0
 	github.com/grafana/xk6-sql v1.0.0
+	github.com/sijms/go-ora/v2 v2.8.24
 	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.35.0
 )
@@ -27,12 +27,10 @@ require (
 	github.com/evanw/esbuild v0.21.2 // indirect
 	github.com/fatih/color v1.17.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
-	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.4+incompatible // indirect
-	github.com/godror/knownpb v0.1.2 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/google/pprof v0.0.0-20231127191134-f3a68a39ae15 // indirect
 	github.com/google/uuid v1.6.0 // indirect
